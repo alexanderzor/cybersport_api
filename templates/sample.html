@@ -1,0 +1,990 @@
+
+
+
+<!DOCTYPE html>
+<html ng-app="GG" ng-controller="default">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+		<title>IEM Season X - Shenzhen — турнир по StarCraft II</title>
+
+		<meta http-equiv="Content-Language" content="ru">
+		<meta name="generator" content="">
+		<meta name="authors" content="">
+		<meta name="copyright" content="">
+		<meta name="description" http-equiv="description" content="">
+        <meta name="apple-itunes-app" content="app-id=881408020">
+		<meta name="keywords" http-equiv="keywords" content="">
+        <meta name='yandex-verification' content='7750c09b84abf8ec' />
+
+        <link rel="shortcut icon" href="/images/icons/favicon.png" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <link rel="alternate" type="application/rss+xml" title="GoodGame" href="http://goodgame.ru/rss/" />
+
+		<link href="//goodgame.ru/css/compiled/style.css?rc9n9j" type="text/css" rel="stylesheet"/>
+<link href="//goodgame.ru/css/compiled/smiles.css?rccenx" type="text/css" rel="stylesheet"/>
+<link href="//goodgame.ru/css/jquery.autocomplete.css?qw70lu" type="text/css" rel="stylesheet"/>
+<script src="//goodgame.ru/js/libraries/jquery-1.7.1.min.js?q6tg7m" type="text/javascript"></script>
+<script src="//goodgame.ru/js/libraries/swfobject.js?q6tg7m" type="text/javascript"></script>
+
+        
+        <script>
+            jQuery.cachedScript = function( url, options ) {
+                options = $.extend( options || {}, {
+                    dataType: "script",
+                    cache: true,
+                    url: url
+                });
+                return jQuery.ajax( options );
+            };
+        </script>
+        <script src="/js/libraries/angular.min.js"></script>
+        <script src="/js/libraries/angular-sanitize.min.js"></script>
+        <script src="/js/libraries/angular-route.min.js"></script>
+
+        <script src="/js/libraries/angular-ui-router.min.js"></script>
+
+        <script src="//goodgame.ru/js/minified/angular.js?rcceo4" type="text/javascript"></script>
+<script src="//goodgame.ru/js/minified/all.js?rcceo4" type="text/javascript"></script>
+
+		
+		<script>
+			var AJAX_PATH = 'http://goodgame.ru/ajax';
+			var AJAX_HTTPS_PATH = 'https://goodgame.ru/ajax';
+			var VIEW_PATH = 'http://goodgame.ru/view';
+			var WEB = 'http://goodgame.ru/';
+            var CKEDITOR_BASEPATH = WEB + 'js/ckeditor/';
+			var DEV = '';
+
+			var User = '0';
+			var canRate = '1';
+			var Token = '';
+			var NotifySettings = [];
+            var Menu_Fix = '';
+
+            window.timeLag = +new Date() - 1436683346000;
+		</script>
+
+        <base href="/event/7724/" target="_self" />
+
+
+    <meta property="og:image" content="http://goodgame.ru/files/logotypes/ev_7724_hMuu_logom.jpg?rcdkup">
+
+<style>
+    #wrapper, #wrapper_top {
+        position: relative;
+        width: 1150px;
+        margin: 0 auto;
+    }
+    #content, #video, #streams, #channel, #videos, #video .content {
+        width: 1150px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #adouter {
+        position: absolute;
+        left: 50%;
+        float: left;
+        clear: both;
+        z-index: 0;
+    }
+
+    #adinner {
+        position: relative;
+        left: -50%;
+    }
+    body {
+        background: #000000;
+    }
+
+    .parnter-logo {
+        color: #fff;
+    }
+
+    #appstore {
+        position: absolute;
+        left: 50%;
+        margin-left: -145px;
+        top: 50px;
+    }
+
+    /*#ad-gg-left a, #ad-gg-right a {
+        margin-top: 196px;
+    }*/
+
+
+    #partners svg:hover {
+        color:#75b4e7;
+    }
+    #block-partners .block-content {
+        background: transparent;
+    }
+
+    #logo-gg {
+        top: -150px;
+        position: absolute;
+    }
+
+            #logo-gg {
+            width: 185px;
+            top: -130px;
+        }
+        #partners .logo-gg {
+            bottom: 25px;
+        }
+        #partners {
+            height: 148px;
+        }
+        .pblock .parnter-logo {
+            height: 148px;
+            padding: 0 60px;
+            box-sizing: content-box;
+        }
+        .pblock {
+            margin-right: -80px;
+        }
+
+        #g2a-logo {
+            width: 105px;
+        }
+        #rox-logo {
+            width: 80px;
+        }
+    </style>
+
+</head>
+
+<body class="black">
+<div id="filter-overflow"></div>
+<a href="#" id="left-click"><div class="icon-angle-top"></div></a>
+
+
+<div id="showframe" style="position:absolute;top:48px;left:0;right:0;height:1348px;overflow:hidden;min-width:1150px;">
+    <div id="adouter">
+        <div id="adinner">
+            <iframe src="http://goodgame.ru/ibranding" frameborder="0" scrolling="no" width="2050" height="1348"></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="head-menu" class="head-menu" style="display: none;"></div>
+<header>
+    <div class="wrap" id="top">
+        <a class="logo" href="http://goodgame.ru/" target="_self">
+            <svg width="19px" height="17px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="UI-kit-GoodGame" sketch:type="MSArtboardGroup" transform="translate(-1098.000000, -1371.000000)" fill="#FFFFFF">
+                        <path d="M1098.72045,1388.20349 L1115.65792,1371.81849 C1116.05582,1371.36645 1116.86392,1371 1117.45833,1371 L1118.54167,1371 C1119.13811,1371 1119.9445,1371.36681 1120.34208,1371.81849 L1137.27955,1388.20349 C1137.67744,1388.65553 1138,1389.51553 1138,1390.11973 L1138,1392.31868 L1098,1392.31868 L1098,1390.11973 C1098,1389.51346 1098.32288,1388.65516 1098.72045,1388.20349 Z M1133.13514,1392.31868 L1133.13514,1410.45102 C1133.13514,1410.75421 1132.89148,1411 1132.59689,1411 L1103.40311,1411 C1103.10585,1411 1102.86486,1410.75004 1102.86486,1410.45102 L1102.86486,1392.31868 L1133.13514,1392.31868 Z M1113.67568,1397.81319 L1122.32432,1397.81319 L1122.32432,1411 L1113.67568,1411 L1113.67568,1397.81319 L1113.67568,1397.81319 Z" id="home"></path>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <!--<script>replaceSvg('logo'); </script>-->
+        <ul class="menu-links links">
+            <li id="m6"><a href="http://goodgame.ru/channels/" target="_self">Стримы</a></li>
+            <li id="m13"><a href="http://goodgame.ru/video/" target="_self">Видео</a></li>
+            <li id="m17"><a href="http://goodgame.ru/cup/" target="_self">Турниры</a></li>
+            <li id="m2">
+                <a href="http://goodgame.ru/forum/" id="forum-a" target="_self">Форум</a>
+                <ul class="sub-menu forum"></ul>
+            </li>
+
+            <li id="m3"><a href="http://goodgame.ru/event/" target="_self">События</a></li>
+            <li id="m16"><a href="http://goodgame.ru/help/" target="_self">Помощь</a></li>
+        </ul>
+        <div class="search-block">
+            <form action="/search/">
+                <span class="icon icon-search"></span>
+                <input class="search-input" type="text" name="query" autocomplete="off" data-lock="0">
+                <input type="submit" style="display: none">
+            </form>
+            <div id="searchResults" class="sub-menu" style="display: none;"></div>
+        </div>
+        
+<ul class="links top register">
+    <li>
+        <a href="javascript:" rel="reg-popup">Регистрация</a>
+    </li>
+    <li>
+        <a href="javascript:" rel="login-popup">Вход</a>
+    </li>
+</ul>
+<div id="loginMenuContainer" class="mainMenu" style="display: block;"></div>
+<div id="dialog-confirm" style="display:none" title="Вход на сайт"><p></p></div>
+
+    </div>
+</header>
+
+<div id="partners" style="width: 1115px;">
+    <div class="inner-partners-fig-vam-adblock">
+        <div class="pblock">
+            <a href="/team/12" target="_blank" rel="nofollow">
+                <svg id="rox-logo" src="/images/svg/tornado-rox-2.svg" width="86"></svg>
+            </a>
+
+            <a href="https://vk.com/tornado_energy" target="_blank" rel="nofollow">
+                <svg id="tornado_logo" src="/images/svg/tornado_logo.svg" width="86"></svg>
+            </a>
+
+            <a href="http://www.kaspersky.ru/" target="_blank" rel="nofollow">
+                <svg id="kaspersky-logo" src="/images/svg/kaspersky-logo.svg" width="86"></svg>
+            </a>
+
+            <a href="https://www.g2a.com/r/roxcis" target="_blank" rel="nofollow">
+                <svg id="g2a-logo" src="/images/svg/g2a.svg" width="86"></svg>
+            </a>
+
+            <script>
+                replaceSvg('.inner-partners-fig-vam-adblock');
+            </script>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <a class="logo-gg" href="http://goodgame.ru/" target="_self">
+        <svg xmlns="http://www.w3.org/2000/svg" id="logo-gg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="238px" height="100px" viewBox="0 0 46 19" version="1.1">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="new-navigation-user-+-forum" sketch:type="MSArtboardGroup" transform="translate(-64.000000, -152.000000)" fill="#fff">
+                    <g id="top-bars" sketch:type="MSLayerGroup" transform="translate(-3.000000, 138.000000)">
+                        <g id="nav" sketch:type="MSShapeGroup">
+                            <path d="M100.286077,30.4277485 C100.286077,31.8483479 101.478337,33.0000005 102.94892,33.0000005 C104.419775,33.0000005 105.612035,31.8483479 105.612035,30.4277485 C105.612035,29.0071491 104.419775,27.8554965 102.94892,27.8554965 C101.478337,27.8554965 100.286077,29.0071491 100.286077,30.4277485 Z M109.939109,28.4984281 C108.652292,28.4984281 107.609167,29.5061461 107.609167,30.7491705 C107.609167,31.9921073 108.652292,32.9999129 109.939109,32.9999129 C111.226016,32.9999129 112.269232,31.9921073 112.269232,30.7491705 C112.269232,29.5061461 111.226016,28.4984281 109.939109,28.4984281 L109.939109,28.4984281 Z M88.0177994,26.8624962 C88.0177994,26.8624962 90.8717517,26.8518084 92.6371587,26.8624962 C92.1858571,27.4151072 91.0676663,28.8202005 88.3031946,28.8202005 C85.3653825,28.8202005 82.7056223,26.5704218 82.7056223,23.5147665 C82.7056223,20.2731263 85.3483386,18.1569449 88.364299,18.1583466 C91.3789901,18.1597482 92.8677051,20.1438216 93.2145673,20.8365127 C94.1586925,20.8237224 95.0116144,20.8288035 97.3719273,20.8365127 C97.3720179,18.5025458 93.7392122,14.016129 88.3031946,14.016129 C82.9122347,14.016129 78.4192543,17.9961025 78.4192543,23.3539241 C78.4192543,29.5677322 84.0587112,33.0000005 87.9703846,33.0000005 C90.5378538,33.0000005 93.019922,32.1509348 94.3694752,30.8797892 C94.371651,31.9319228 94.3694752,33.0000005 94.3694752,33.0000005 L97.602927,33.0000005 L97.602927,23.7378959 L88.0177994,23.7378959 L88.0177994,26.8624962 L88.0177994,26.8624962 Z M71.9657682,26.8624962 L74.0444935,26.8624962 L74.0444935,27.755189 C74.0444935,28.7318949 73.2557583,29.5406623 72.0812681,29.5406623 C71.3247169,29.5406623 70.2335425,28.8482341 70.2335425,27.6435805 L70.2335425,21.3944677 C70.2335425,20.2737395 71.005959,19.4955461 72.1084658,19.4955461 C73.2816868,19.4955461 74.0444935,20.2571822 74.0444935,21.2828592 L74.0444935,21.7292056 L76.9315364,21.7292056 L76.9315364,20.1669493 C76.9315364,18.8087245 75.2228821,16.2612647 72.0812681,16.2612647 C69.3076398,16.2611771 67,18.2756494 67,20.9480336 L67,27.8554089 C67,31.2705066 69.8028205,32.7768711 72.325776,32.7768711 C74.9960527,32.7768711 77.1624455,30.4262592 77.1624455,28.6478819 L77.1624455,24.2957633 L71.9657682,24.2957633 L71.9657682,26.8624962 L71.9657682,26.8624962 Z M111.576324,27.1972341 L111.922732,15.7032222 L107.303464,15.7032222 L107.996372,27.1972341 L111.576324,27.1972341 L111.576324,27.1972341 Z M104.64742,26.5276706 L105.340329,14.1409659 L100.374651,14.1409659 L100.951969,26.5276706 L104.64742,26.5276706 L104.64742,26.5276706 Z" id="logo"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+
+    <script>Filter(3)</script>
+
+    
+    <script>menu_onload('0300');</script>
+
+<table style="border-collapse: separate; position: relative; width: 1150px; margin: 0 auto;">
+    
+
+    
+    </table>
+
+
+<div id="content">
+<div class="content">
+	<div id="content-left">
+        
+    
+                
+    
+
+<div class="block-header" id="event-tabs">
+    <ul>
+                <li >
+                            <a class="current" href="/event/7724/">Общая информация</a>
+                        </li>
+            </ul>
+</div>
+
+
+<script>
+$('#event-tabs').tabsAjaxSwitcher('#event-tab', []);
+</script>
+
+<script>
+    $.getScript('//goodgame.ru/js/libraries/idangerous.swiper.min.js', function() {
+        $.getScript('//goodgame.ru/js/libraries/idangerous.swiper.scrollbar.min.js', function() {
+            spoilerBlock();
+            swiperFunc();
+        });
+    });
+
+</script>
+
+    <div id="event-tab" class="description">
+                    <div class="block-left news" gg-obj="{&quot;obj_type&quot;:3,&quot;obj_id&quot;:&quot;7724&quot;}">
+    <div class="material-block">
+        <div ng-hide="!edit" class="foreditor">
+            <h1>Блок на главной:</h1>
+            <div class="short-block" gg-short-block gg-height="215">
+                <div class="short-img-block">
+                    <img-uploader gg-src="http://goodgame.ru/files/logotypes/ev_7724_gFKe_orig.jpg?rccn5x" gg-width="227" gg-height="215" gg-name="logo_small" gg-crop="{&quot;cropX&quot;:&quot;98&quot;,&quot;cropY&quot;:&quot;0&quot;,&quot;cropW&quot;:&quot;237&quot;,&quot;cropH&quot;:&quot;225&quot;,&quot;fileH&quot;:&quot;215&quot;}"></img-uploader>
+                </div>
+                <div class="short-description description">
+                    <div class="news-block" style="width: 380px;">
+                        <h1 gg-ckeditor ng-mode="line" ng-name="title"><span class="gameicon gameicon-sc2" title="StarCraft II"></span> IEM Season X - Shenzhen</h1>
+                        <div gg-ckeditor ng-mode="autoheight" ng-name="short_description" class="text"><p>С 16 по 20 июля в <span class="flag flag-cn" contenteditable="true" title="Китай"></span>Шеньчжене пройдет турнир серии Intel Extreme Masters Season X. 12 игроков уже заняли свои места в группах, оставшиеся 4 определятся через Dual Tournament. Призовой фонд чемпионата составляет 25000 $.</p>
+</div>
+                        <div class="material-info">
+                            <a href="http://goodgame.ru/event/7724/#toComments" class="info-comments-rel"><span class="icon icon-bubble"></span>3</a>
+
+                            <gg-rating rating="2" rating="2"></gg-rating>
+                            <div class="author-block">вчера в 21:30 от obsessed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height:50px;clear:both;float:none;"></div>
+            <h1>Полный материал:</h1>
+        </div>
+
+        <div class="img-block">
+            <img-uploader gg-src="http://goodgame.ru/files/logotypes/ev_7724_hMuu_logom.jpg?rcdkup" gg-width="652" gg-height="300" gg-name="logo" gg-crop=""></img-uploader>
+            <gg-update></gg-update>
+        </div>
+
+        <div class="description">
+            <div class="news-block">
+                <h1 ng-if="!edit"><span class="gameicon gameicon-sc2" title="StarCraft II"></span> IEM Season X - Shenzhen
+
+                    
+                </h1>
+                <div class="text">
+                                        <div ng-if="!edit" class="text"><p>С 16 по 20 июля в <span class="flag flag-cn" contenteditable="true" title="Китай"></span>Шеньчжене пройдет турнир серии Intel Extreme Masters Season X. 12 игроков уже заняли свои места в группах, оставшиеся 4 определятся через Dual Tournament. Призовой фонд чемпионата составляет 25000 $.</p>
+</div>
+                    <div gg-ckeditor ng-mode="default" ng-name="description" class="text"><p>Формат турнира:</p>
+
+<p>1 этап:</p>
+
+<ul>
+	<li>2 отборочных турнира в формате Double elimination на 8 игроков</li>
+	<li>Топ 2 проходят во второй этап</li>
+</ul>
+
+<p>2 этап:</p>
+
+<ul>
+	<li>Групповой этап в формате GSL, 4 группы по 4 игрока</li>
+	<li>Топ 2 каждой группы выходят в 3 этап</li>
+</ul>
+
+<p>3 этап:</p>
+
+<ul>
+	<li>Playoff - Single-elimination</li>
+	<li>Четвертьфиналы и полуфиналы - bo5</li>
+	<li>Финал - bo7</li>
+</ul>
+
+<p style="text-align:center;"><strong>Групповая стадия</strong></p>
+
+<table align="left" style="width:290px;">
+	<tbody>
+		<tr>
+			<th style="width:181.333335876465px;text-align:center;"><strong>Группа А</strong></th>
+			<th style="text-align:center;width:23.6666641235352px;"><strong>В</strong></th>
+			<th style="text-align:center;width:10px;"><strong>П</strong></th>
+			<th style="text-align:center;width:22px;white-space:nowrap;"><strong>О</strong></th>
+		</tr>
+		<tr>
+			<td style="width:157.333335876465px;"> <!-- #USER-233387 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-terran" title="Terran"></span><a href="http://goodgame.ru/user/233387/" rel="nofollow">TY</a></span><!-- USER# --><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;white-space:nowrap;vertical-align:middle;"> </td>
+			<td style="text-align:center;width:1px;white-space:nowrap;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:157.333335876465px;"> <!-- #USER-1391 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-zerg" title="Zerg"></span><a href="http://goodgame.ru/players/1391-Jaedong/" rel="nofollow">Jaedong</a></span><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;white-space:nowrap;vertical-align:middle;"> </td>
+			<td style="text-align:center;width:1px;white-space:nowrap;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:157.333335876465px;"> <!-- #USER-79392 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-terran" title="Terran"></span><a href="http://goodgame.ru/user/79392/" rel="nofollow">Heart</a></span><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:157.333335876465px;"> tba<!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="right" style="width:290px;">
+	<tbody>
+		<tr>
+			<th style="width:154.333343505859px;text-align:center;"><strong>Группа B</strong></th>
+			<th style="text-align:center;width:10px;white-space:nowrap;"><strong>В</strong></th>
+			<th style="text-align:center;width:10px;white-space:nowrap;"><strong>П</strong></th>
+			<th style="text-align:center;width:27px;white-space:nowrap;"><strong>О</strong></th>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"><!-- #USER-79463 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a href="http://goodgame.ru/user/79463/" rel="nofollow">Classic</a></span></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"> <!-- #USER-80945 --><span class="sign"><span class="flag flag-no" title="Норвегия"></span><span class="gameicon gameicon-sc2-zerg" title="Zerg"></span><a href="http://goodgame.ru/user/80945/" rel="nofollow">Snute</a></span><!-- USER# --><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"> <!-- #USER-33984 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a href="http://goodgame.ru/players/33984-Rain/" rel="nofollow">Rain</a></span><!-- USER# --><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;">tba</td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+	</tbody>
+</table>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<table align="left" style="width:290px;">
+	<tbody>
+		<tr>
+			<th style="width:158.333335876465px;text-align:center;"><strong>Группа C</strong></th>
+			<th style="text-align:center;width:10px;"><strong>В</strong></th>
+			<th style="text-align:center;width:10px;"><strong>П</strong></th>
+			<th style="text-align:center;width:22px;white-space:nowrap;"><strong>О</strong></th>
+		</tr>
+		<tr>
+			<td style="width:158.333335876465px;"> <!-- #USER-22865 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a href="http://goodgame.ru/user/22865/" rel="nofollow">herO</a></span><!-- USER# --><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;white-space:nowrap;vertical-align:middle;"> </td>
+			<td style="text-align:center;width:1px;white-space:nowrap;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:158.333335876465px;"> <!-- #USER-73082 --><span class="sign"><span class="flag flag-nl" title="Голландия (Нидерланды)"></span><span class="gameicon gameicon-sc2-terran" title="Terran"></span><a href="http://goodgame.ru/user/73082/" rel="nofollow">uThermal</a></span><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;white-space:nowrap;vertical-align:middle;"> </td>
+			<td style="text-align:center;width:1px;white-space:nowrap;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:158.333335876465px;"> <!-- #USER-104637 --><span class="sign"><span class="flag flag-cn" title="Китай"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a href="http://goodgame.ru/user/104637/" rel="nofollow">Jim</a></span><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:158.333335876465px;"> tba<!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:22px;"> </td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="right" style="width:290px;">
+	<tbody>
+		<tr>
+			<th style="width:154.333343505859px;text-align:center;"><strong>Группа D</strong></th>
+			<th style="text-align:center;width:10px;white-space:nowrap;"><strong>В</strong></th>
+			<th style="text-align:center;width:10px;white-space:nowrap;"><strong>П</strong></th>
+			<th style="text-align:center;width:27px;white-space:nowrap;"><strong>О</strong></th>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"> <!-- #USER-115524 --><span class="sign"><span class="flag flag-cn" title="Китай"></span><span class="gameicon gameicon-sc2-terran" title="Terran"></span><a href="http://goodgame.ru/user/115524/" rel="nofollow">XY</a></span><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"> <!-- #USER-204472 --><span class="sign"><span class="flag flag-br" title="Бразилия"></span><span class="gameicon gameicon-sc2-terran" title="Terran"></span><a href="http://goodgame.ru/user/204472/" rel="nofollow">Kelazhur</a></span><!-- USER# --><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"> <!-- #USER-97956 --><span class="sign"><span class="flag flag-kr" title="Южная Корея"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a href="http://goodgame.ru/user/97956/" rel="nofollow">PartinG</a></span><!-- USER# --><!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+		<tr>
+			<td style="width:154.333343505859px;"> tba<!-- USER# --></td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:1px;"> </td>
+			<td style="text-align:center;width:27px;"> </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+                                    </div>
+            </div>
+
+            <div class="material-info">
+                <gg-rating voted="1" rating="2"></gg-rating>
+                <span class="icon icon-eye">&nbsp;423</span>&nbsp;&nbsp;
+                                <gg-edit-buttons>
+                    <div class="icons">
+                                            </div>
+                </gg-edit-buttons>
+
+                <div class="author-block">
+                    <gg-date-picker gg-time="1436639447" gg-name="created_date">
+                        вчера в 21:30
+                    </gg-date-picker>
+                    от
+                    <a href="http://goodgame.ru/user/17290/">obsessed</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    </div>
+
+    
+    <a id="toComments"></a>
+
+<div class="comments" id="comments">
+
+    
+	<div id="comments-inner">
+		
+
+
+
+<div class="header navigation">
+	<h2>
+		<a href="#"><span class="icon-comments-light"></span></a>&nbsp;3 комментария
+        <a class="icon icon-spinner fright js-refresh" href="#" title="Обновить"></a>
+	</h2>
+	
+    </div>
+
+<div class="comments-list">
+    
+
+    	<div class="comment" id="c3312941" data-obj-type="3" data-obj-id="7724">
+
+                    <div title="Не в сети" class="avatar-block" style="background-image:url(http://goodgame.ru/files/avatars/av_135290_alJo.jpg)">
+            </div>
+			<div class="rating">
+
+                                <span class="rating-value-holder">
+                                       <span class="rating-value null">0</span>
+                </span>
+			</div>
+			
+			<div class="icons">
+            			</div>
+			
+			<div class="inner">
+				<div class="header">
+					<a href="/comment/3312941/" class="cnum">#1</a> <span class="sign"><span class="flag flag-by" title="Беларусь"></span><span class="gameicon gameicon-chat-flame" title="flame"></span><a href="http://goodgame.ru/user/135290/">JusTaDreamer</a></span>
+                    
+					<i><span class="info-date">вчера в 23:31</span></i>
+                    
+				</div>
+
+                                    <div class="text"><p>Ща классик, рейн, партинг, хиро займут топ 4, а терране будут ныть "имба" </p>
+
+<p><img alt="pled" class="smiles pled-big" src="/images/chat/blank.gif" /></p>
+</div>
+                
+                <div class="control-block ov">
+                    <div class="dialog-block fleft">
+                        <a href="#" class="answer" data-id="3312941">Ответить</a>
+                        <a href="#" class="quote" data-id="3312941">Цитировать</a>
+                    </div>
+                                                        </div>
+			</div>
+        	</div>
+    
+    	<div class="comment" id="c3312979" data-obj-type="3" data-obj-id="7724">
+
+                    <div title="Не в сети" class="avatar-block" style="background-image:url(http://goodgame.ru/files/avatars/avatar.png)">
+            </div>
+			<div class="rating">
+
+                                <span class="rating-value-holder">
+                                       <span class="rating-value null">0</span>
+                </span>
+			</div>
+			
+			<div class="icons">
+            			</div>
+			
+			<div class="inner">
+				<div class="header">
+					<a href="/comment/3312979/" class="cnum">#2</a> <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc" title="Starcraft Brood War"></span><a href="http://goodgame.ru/user/98428/">fireHer</a></span>
+                    
+					<i><span class="info-date">сегодня в 01:11</span></i>
+                    
+				</div>
+
+                                    <div class="text"><p><a href="/comment/3312941/">#1</a>,</p>
+
+<p> <img alt="pled" class="smiles pled-big" src="/images/chat/blank.gif" /> 2015 </p>
+
+<p><img alt="peka" class="smiles peka-big" src="/images/chat/blank.gif" />Не ныть на изи Тосов.</p>
+</div>
+                
+                <div class="control-block ov">
+                    <div class="dialog-block fleft">
+                        <a href="#" class="answer" data-id="3312979">Ответить</a>
+                        <a href="#" class="quote" data-id="3312979">Цитировать</a>
+                    </div>
+                                                        </div>
+			</div>
+        	</div>
+    
+    	<div class="comment" id="c3313004" data-obj-type="3" data-obj-id="7724">
+
+                    <div title="В сети" class="avatar-block online" style="background-image:url(http://goodgame.ru/files/avatars/avatar.png)">
+            </div>
+			<div class="rating">
+
+                                <span class="rating-value-holder">
+                                       <span class="rating-value null">0</span>
+                </span>
+			</div>
+			
+			<div class="icons">
+            			</div>
+			
+			<div class="inner">
+				<div class="header">
+					<a href="/comment/3313004/" class="cnum">#3</a> <span class="sign"><span class="flag flag-kz" title="Казахстан"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a href="http://goodgame.ru/user/76052/">lightweightKZ</a></span>
+                    
+					<i><span class="info-date">7 часов назад</span></i>
+                    
+				</div>
+
+                                    <div class="text"><p>Группа B - "One love" <img alt="pled" class="smiles pled-big" src="/images/chat/blank.gif" /></p>
+</div>
+                
+                <div class="control-block ov">
+                    <div class="dialog-block fleft">
+                        <a href="#" class="answer" data-id="3313004">Ответить</a>
+                        <a href="#" class="quote" data-id="3313004">Цитировать</a>
+                    </div>
+                                                        </div>
+			</div>
+        	</div>
+    
+    
+</div>
+
+    <div id="new-comments">
+        Новых комментариев: <span id="newCnt">0</span>
+    </div>
+
+
+<script>
+    var oldN = 3;
+</script>
+	</div>
+                <div id="hiddenBlock" ><a href="#">Развернуть скрытые комментарии (<span id="hiddenCnt">0</span>)</a></div>
+
+            
+
+                    <h2 class="leave-comment-header">
+    <a href="#"><span class="icon-comments-light"></span></a>&nbsp;Написать комментарий
+</h2>
+
+<form>
+    <div class="leave-comment">
+        <script> var form = null; </script>
+        <div id="comment_added">Комментарий успешно добавлен!</div>
+                <div class="ceditor" gg-editor>
+            <div class="avatar-block online" style="background-image:url(http://goodgame.ru/files/avatars/avatar.png)"></div>
+            <div id="comments-editor" gg-ckeditor ng-name="comment" ng-mode="comments"></div><div class="block-smiles" id="smiles-main" style="display: none;">
+                <div class="inner-smiles">
+                    <div class="slide"></div>
+                </div>
+                <div class="smiles-navigation"><ol></ol></div>
+            </div>
+                            <div class="placeholder">
+                    <div class="inner-content">
+                        <div class="warning"><a href="#" onclick="show_login_form(event, comments_callback);">Войдите</a> или <a href="#" onclick="show_registration_form(event, comments_callback);">зарегистрируйтесь</a>, чтобы оставить комментарий.</div>
+                    </div>
+                </div>
+                        <div class="input-editor" style="left: 60px;">
+                <input type="submit" class="btn btn-blue" value="Комментировать" name="post" style="display: none"/>
+            </div>
+        </div>
+    </div>
+</form>        
+
+            
+</div>
+
+<script>
+            var comments = $('#comments').comments('3','7724','');
+    
+    $(function() {
+        $('*[gg-obj]').notifySubscribe( function(data) {
+            if($('#comments').hasClass('loading')) return false;
+
+            if( data.event == 'comments' ) {
+                if(oldN && data.value-oldN) $('#new-comments').show().animate({height:'40px'}, 200).find('#newCnt').html(data.value-oldN);
+            }
+
+            if( data.event == 'text' ) {
+                $('#c' + data.cid).find('.text').html(data.value);
+            }
+
+            if ( data.event == 'rate' ) {
+                $('#c' + data.cid).find('.rating-value-holder').html(data.value);
+            }
+
+            if ( data.event == 'premiums' && window.smilesUpdate ) {
+                window.smilesUpdate();
+            }
+
+        });
+
+        $('body').on('click', '#new-comments', function () {
+            $('.comments a.js-refresh').click();
+        });
+
+    });
+
+
+</script>
+
+
+    </div>
+
+<div id="content-right">
+
+    <div id="" class="block event-info"><div class="block-header"><h2>Информация о турнире</h2></div><div class="block-content"><table><tr><td colspan="2"><img src="http://goodgame.ru/files/logotypes/ev_7724_UE4s_line.png" /></td></tr><tr><td class="left">Игра</td><td class="right"><span class="gameicon gameicon-sc2" title="StarCraft II"></span>StarCraft II</td></tr><tr><td class="left">Время проведения</td><td class="right">16 июл, 22:30 - 21 июл, 00:30</td></tr><tr><td class="left">Место проведения</td><td class="right">Не указано</td></tr><tr><td class="left">Призовой фонд</td><td class="right gold">25000 $</td></tr></table></div></div>
+
+    
+    
+
+            <div id="" class="block prize-fund"><div class="block-header"><h2>Призовой фонд</h2></div><div class="block-content"><table><tr class="header"><td>Место</td><td>Приз</td><td>Победитель</td></tr><tr id="p16976"><td class="place">1</td><td class="prize">10000 $</td><td>TBD</td></tr><tr id="p16977"><td class="place">2</td><td class="prize">4000 $</td><td>TBD</td></tr><tr id="p16978"><td class="place">3-4</td><td class="prize">2000 $</td><td>TBD</td></tr><tr id="p16979"><td class="place">5-8</td><td class="prize">1000 $</td><td>TBD</td></tr><tr id="p16980"><td class="place">9-12</td><td class="prize">400 $</td><td>TBD</td></tr><tr id="p16981"><td class="place">13-16</td><td class="prize">350 $</td><td>TBD</td></tr></table></div></div>
+    
+    
+    
+    
+ 
+<div class="ad">
+	<iframe id='ac3503b6' name='ac3503b6' width='240' height='400' src='http://premium.goodgame.ru/ra/www/d/ffr.php?campaignid=9&amp;cb=INSERT_RANDOM_NUMBER_HERE' frameborder='0' scrolling='no'><a href='http://premium.goodgame.ru/ra/www/d/ck.php?n=a096ac90&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://premium.goodgame.ru/ra/www/d/avw.php?campaignid=9&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a096ac90' border='0' alt='' /></a></iframe>
+</div>
+
+</div>
+ 
+
+
+
+ 
+<script src="//goodgame.ru/js/ckeditor/ckeditor.js?qtuoai" type="text/javascript"></script>
+<script src="//goodgame.ru/js/ckeditor/adapters/jquery.js?qtuoai" type="text/javascript"></script>
+<script>var Event = new Event(7724);</script></div>
+</div>
+
+<!--noindex-->
+<div id="footer-top"><div class="content">
+	<a href="https://docs.google.com/presentation/d/1zJNgvtfV9kEF1Ylzb0TNsK963WveNa-bOumQDgGaA7c/pub?start=false&loop=false&delayms=3000" target="_blank" rel="nofollow">Реклама</a>
+    <a href="http://goodgame.ru/stats/" rel="nofollow">Статистика сайта</a>
+	<a href="https://docs.google.com/presentation/d/1sX12Xb5Vk533jRpo3wkbFw-uEGnXmmQgvqFGoTJWI9c/present#slide=id.p" target="_blank" rel="nofollow">О сайте</a>
+    <a href="http://goodgame.ru/help/" target="_self" rel="nofollow">Помощь</a>
+    <a href="https://docs.google.com/document/pub?id=1Sl-o_WZW8gmOi3132ByLqWOE2Ny-38QxyierEd0VxIY" target="_blank" rel="nofollow">Пользовательское соглашение</a>
+</div></div>
+
+<img width="1" src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=1&ad=529295&bt=21&pid=2037792&bid=3916419&bn=3916419&rnd=564115589" style="visibility: hidden; position: absolute;">
+
+	<div id="footer-bottom"><div class="content">
+		<ul>
+			<li>
+				<p>&copy; 2007 – <b style="font-size: 16px;">&infin;</b> ООО «Мидиан»</p>
+				<p>Свидетельство о регистрации СМИ Эл No ФС77-32290</p>
+                <p>Запрещено для детей. 18+</p>
+			</li>
+
+			<li>
+                Коллеги, если вы используете материалы с нашего сайта,
+                будьте добры указывать в качестве источника GoodGame.ru. Спасибо.
+            </li>
+
+            <li>
+                Дизайн, разработка и техническая поддержка ресурса:<br>
+                <a href="mailto:support@goodgame.ru">GoodGame Dev Group</a><br />
+		    </li>
+
+
+            <li>
+                При оплате банковской картой ввод реквизитов карты происходит в системе электронных платежей
+                ОАО АКБ «Авангард», которая прошла сертификацию в платежных системах Visa и MasterCard.
+                Представленные вами данные полностью защищены.
+            </li>
+
+            <li style="width:750px;margin-right:-10px;">
+                <img src="/images/creditcards.png">
+
+                <a style="margin: 15px;" href="http://www.megastock.ru/" target="_blank" rel="nofollow"><img src="/images/acc_blue_on_transp_ru.png" alt="www.megastock.ru" border="0"/></a>
+                <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=352743408907" target="_blank"><img src="/images/v_blue_on_transp_ru.png" alt="Здесь находится аттестат нашего WM идентификатора 352743408907" border="0" rel="nofollow" /></a>
+
+
+                <div id="strmwll">Защита сайта от DDoS-атак &mdash; <a href="https://stormwall.pro/" target="_blank" rel="nofollow">StormWall</a></div>
+            </li>
+        </ul>
+
+    <div id="footer-dev"><script>document.write(DEV);</script></div>
+
+                <!--LiveInternet counter-->
+<script type="text/javascript"><!--
+            new Image().src = "//counter.yadro.ru/hit?r"+
+            escape(document.referrer.replace('beta.goodgame.ru', 'goodgame.ru'))+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";"+Math.random();//-->
+</script>
+<!--/LiveInternet-->
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter11385799 = new Ya.Metrika({id:11385799});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/11385799" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- google -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3668187-1']);
+  _gaq.push(['_setDomainName', 'goodgame.ru']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- /google -->
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+	(function(win, doc, cb){
+		(win[cb] = win[cb] || []).push(function() {
+			try {
+				tnsCounterGoodgame_ru = new TNS.TnsCounter({
+				'account':'goodgame_ru',
+				'tmsec': 'goodgame_total'
+				});
+			} catch(e){}
+		});
+
+		var tnsscript = doc.createElement('script');
+		tnsscript.type = 'text/javascript';
+		tnsscript.async = true;
+		tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+			'//www.tns-counter.ru/tcounter.js';
+		var s = doc.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(tnsscript, s);
+	})(window, this.document,'tnscounter_callback');
+</script>
+<noscript>
+	<img src="//www.tns-counter.ru/V13a****goodgame_ru/ru/UTF-8/tmsec=goodgame_total/" width="0" height="0" alt="" />
+</noscript>
+<!--/ tns-counter.ru -->
+
+<!-- Begin comScore Tag -->
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "16558621" });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script>
+<noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=16558621&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+	</div>
+
+            
+        </div>
+</div>
+
+<!--/noindex-->
+
+<ul id="notifySystem">
+
+</ul>
+
+    <div id="fb-root"></div>
+    <div id="vk_api_transport"></div>
+
+
+    <script src="//vkontakte.ru/js/api/openapi.js"></script>
+    <script>
+        $(function() {
+
+            window.fbAsyncInit = function() { FB.init({appId: '410609439070133', xfbml: true, cookie: true, oauth: true}); };
+            window.vkAsyncInit = function() { VK.init({apiId: '2903428'}); };
+
+
+            (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+            }());
+
+            (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol + '//vk.com/js/api/openapi.js';
+                document.getElementById('vk_api_transport').appendChild(e);
+            }());
+
+        });
+
+    </script>
+
+
+<script>
+    $.cachedScript('/js/libraries/jquery.mousewheel.js');
+    $.cachedScript('/js/libraries/jquery-ui.min.js');
+    $.cachedScript('/js/libraries/TweenMax.min.js');
+</script>
+
+
+
+<script>
+    init();
+</script>
+<style>
+    #content-left .block-left {
+        padding: 0;
+    }
+</style>
+
+</body>
+</html>
